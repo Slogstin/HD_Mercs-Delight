@@ -1,0 +1,42 @@
+class UaS_VirBlackTea : UaS_Consumable {
+	mixin UaS_VirTeaDrinks;
+	default {
+		tag "Earl Gray";
+		UaS_Consumable.Description "Your standard black tea! How classy!";
+	}
+	override void Messages() {
+		AddOpenText("Nothing beats the classics.");
+	}
+}
+
+
+class UaS_VirMintTea : UaS_Consumable {
+	mixin UaS_VirTeaDrinks;
+	default {
+		tag "Mint Tea";
+		UaS_Consumable.Description "Minty and fresh, perfect for the battlefield.";
+	}
+}
+
+
+class UaS_VirBerryTea : UaS_Consumable {
+	mixin UaS_VirTeaDrinks;
+	default {
+		tag "Berry Tea Mix";
+		UaS_Consumable.Description "7 different berry flavours mixed into one tea bag. The power of nature in a single drink!";
+	}
+}
+
+
+class UaS_VirChristmasTea : UaS_Consumable {
+	mixin UaS_VirTeaDrinks;
+	default {
+		tag "Christmas Tea";
+		UaS_Consumable.Description "Tea that tastes like fruitcake...or at least they say it does.";
+	}
+	override void Messages() {
+		AddOpenText("It kinda smells like it.");
+		AddConsumeText("No, it does not taste like fruitcake...for better or for worse.");
+		AddConsumeText("It's impossible to describe this taste.");
+	}
+}

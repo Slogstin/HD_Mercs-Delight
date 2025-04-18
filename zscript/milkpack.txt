@@ -1,0 +1,66 @@
+class UaS_VirBasicMilk : UaS_Consumable {
+	mixin UaS_VirMilkDrinks;
+	default {
+		tag "Milk";
+		UaS_Consumable.Description "Just some basic Milk. Goes well with cookies and cereal.";
+	}
+	override void Messages() {
+		AddOpenText("Tastes better than i remember.");
+		AddOpenText("Now i want some cookies...");
+	}
+}
+
+
+class UaS_VirStrawberryMilk : UaS_Consumable {
+	mixin UaS_VirMilkDrinks;
+	default {
+		UaS_Consumable.Calories 250;
+		tag "Strawberry Milk";
+		UaS_Consumable.Description "Sweet, Fruity and underrated!";
+	}
+	override void Messages() {
+		AddOpenText("Definitely better than the regular milk powder.");
+		AddOpenText("Not too bad actually!");
+	}
+}
+
+
+class UaS_VirChoccyMilk : UaS_Consumable {
+	mixin UaS_VirMilkDrinks;
+	default {
+		UaS_Consumable.Calories 250;
+		tag "Chocolate Milk";
+		UaS_Consumable.Description "The classic. Can be enjoyed both hot and cold!";
+	}
+	override void Messages() {
+		AddOpenText("Not bad. Not bad at all.");
+		AddOpenText("Would be better warm.");
+	}
+}
+
+
+class UaS_VirVanillaMilk : UaS_Consumable {
+	mixin UaS_VirMilkDrinks;
+	default {
+		UaS_Consumable.Calories 250;
+		tag "Vanilla Milk";
+		UaS_Consumable.Description "Sweet, with a very pleasant vanilla aroma.";
+	}
+	override void Messages() {
+		AddOpenText("Might be better than chocolate milk!");
+	}
+}
+
+
+class UaS_VirPeachMilk : UaS_Consumable {
+	mixin UaS_VirMilkDrinks;
+	default {
+		UaS_Consumable.Calories 250;
+		tag "Peach & Maracuja Milk";
+		UaS_Consumable.Description "A surprisingly sweet & sour mix of peach and maracuja.";
+	}
+	override void Messages() {
+		AddOpenText("It's a little thick.");
+		AddOpenText("Almost like yoghurt.");
+	}
+}

@@ -1,0 +1,103 @@
+//Snacks
+
+mixin class UaS_VirSnacks {
+	default {
+		UaS_Consumable.Calories 250;
+		UaS_Consumable.Fluid 0;
+		UaS_Consumable.Bulk 6;
+		+UaS_Consumable.PACKAGED;
+		Inventory.PickupMessage "Picked up a sealed pouch with snacks!";
+		scale 0.4;
+	}
+}
+
+
+//Desserts
+
+mixin class UaS_VirDesserts {
+	default {
+		UaS_Consumable.Calories 350;
+		UaS_Consumable.Fluid 100;
+		UaS_Consumable.Bulk 8;
+		+UaS_Consumable.PACKAGED;
+		+UaS_Consumable.RESEALABLE;
+		Inventory.PickupMessage "Picked up a vacuum-sealed, chilled box, containing desserts!";
+		scale 0.6;
+	}
+}
+
+
+//Small Meals
+
+mixin class UaS_VirSmallMeals {
+	default {
+		UaS_Consumable.Calories 400;
+		UaS_Consumable.Fluid 150;
+		UaS_Consumable.Bulk 12;
+		+UaS_Consumable.PACKAGED;
+		+UaS_Consumable.RESEALABLE;
+		Inventory.PickupMessage "Picked up a small vacuum-sealed MRE pouch";
+		scale 0.6;
+	}
+}
+
+
+//Big Meals
+
+mixin class UaS_VirBigMeals {
+	default {
+		UaS_Consumable.Calories 800;
+		UaS_Consumable.Fluid 400;
+		UaS_Consumable.Bulk 18;
+		+UaS_Consumable.PACKAGED;
+		+UaS_Consumable.RESEALABLE;
+		Inventory.PickupMessage "Picked up a large vacuum-sealed MRE pouch.";
+	}
+}
+
+//Milk Drinks
+
+mixin class UaS_VirMilkDrinks {
+	default {
+		UaS_Consumable.Calories 150;
+		UaS_Consumable.Fluid 250;
+		UaS_Consumable.Bulk 8;
+		+UaS_Consumable.PACKAGED;
+		+UaS_Consumable.DRINKABLE;
+		Inventory.PickupMessage "Picked up a water pouch, also containing a pack of milk powder.";
+		Inventory.Icon "HSCVR0";
+		scale 0.45;
+	}
+}
+
+
+//Juice
+
+mixin class UaS_VirJuiceDrinks {
+	default {
+		UaS_Consumable.Calories 100;
+		UaS_Consumable.Fluid 250;
+		UaS_Consumable.Bulk 8;
+		+UaS_Consumable.PACKAGED;
+		+UaS_Consumable.DRINKABLE;
+		Inventory.PickupMessage "Picked up a water pouch, also containing a pack of juice mix.";
+		Inventory.Icon "HSCVR0";
+		scale 0.45;
+	}
+}
+
+
+//Tea
+
+mixin class UaS_VirTeaDrinks {
+	default {
+		UaS_Consumable.Calories 100;
+		UaS_Consumable.Fluid 200;
+		UaS_Consumable.Bulk 8;
+		+UaS_Consumable.PACKAGED;
+		+UaS_Consumable.DRINKABLE;
+		Inventory.PickupMessage "Picked up a water pouch, also containing a teabag and some sugar.";
+		Inventory.Icon "HSCVR0";
+		scale 0.45;
+	}
+}

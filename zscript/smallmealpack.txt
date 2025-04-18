@@ -1,0 +1,137 @@
+class UaS_VirPiroshki : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Piroshki";
+		UaS_Consumable.Description "Slavic hand pies, containing all sorts of tasty ingredients. You never know what's inside!";
+	}
+	override void Messages() {
+		AddOpenText("They got strawberry jam!");
+		AddOpenText("eggs and potato, not bad!");
+		AddOpenText("Chocolate? Unusual, but i dig it.");
+		AddOpenText("Pork! Could use some sauce with that.");
+		AddOpenText("These ones have just air inside..");
+	}
+}
+
+
+class UaS_VirCannedBread : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Canned Bread";
+		UaS_Consumable.Fluid 100;
+		UaS_Consumable.Description "Canned garlic bread. Tastes better than normal garlic bread!";
+	}
+	override void Messages() {
+		AddOpenText("Wow, they actually have it!");
+		AddConsumeText("It really does taste better than regular garlic bread...!");
+		AddConsumeText("No wonder even he's a fan of it.");
+	}
+}
+
+
+class UaS_VirQuickPotatoes : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Instant Mashed Potatoes";
+		UaS_Consumable.Description "Powdered mashed potatoes. Add the included water and let it cook for 5 minutes, done!";
+	}
+	override void Messages() {
+		AddOpenText("I prefer the real thing, but oh well.");
+	}
+}
+
+
+class UaS_VirRicePudding : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Rice Pudding";
+		UaS_Consumable.Description "Just some standard Rice pudding. At least it comes with some sugar.";
+	}
+	override void Messages() {
+		AddOpenText("Not the best, but not too bad.");
+		AddConsumeText("Would love some butter with that.");
+		AddConsumeText("At least it's sweet.");
+	}
+}
+
+
+class UaS_VirSandwich : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Sandwiches";
+		UaS_Consumable.Fluid 100;
+		UaS_Consumable.Description "A can containing 2 premade, ham & cheese sandwiches.";
+	}
+	override void Messages() {
+		AddOpenText("Is there anything better than a good sandwich?");
+	}
+}
+
+
+class UaS_VirCannedBurger : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Canned Cheeseburger";
+		UaS_Consumable.Fluid 150;
+		UaS_Consumable.Description "A Cheeseburger in a can!? What has the world come to?";
+	}
+	override void Messages() {
+		AddOpenText("It's all squished..");
+	}
+}
+
+
+class UaS_VirCurryWurst : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Curry Wurst";
+		UaS_Consumable.Description "Sausage in tasty curry sauce! Comes with a seperate spice packet and a tiny, wooden fork!";
+	}
+	override void Messages() {
+		AddOpenText("That fork is adorable.");
+	}
+}
+
+
+class UaS_VirSpinach : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		UaS_Consumable.Calories 300;
+		tag "Spinach";
+		UaS_Consumable.Description "A can of Spinach. Let you inner Sailor come forth!";
+	}
+	override void Messages() {
+		AddOpenText("Popeye, lend me your strength!");
+	}
+}
+
+
+class UaS_VirPineapple : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		UaS_Consumable.Fluid 400;
+		tag "Pineapple";
+		UaS_Consumable.Description "A can of cut pinapple. It has a lot of liquid inside!";
+	}
+}
+
+
+class UaS_VirChickenNuggets : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Chicken Nuggets";
+		UaS_Consumable.Description "Some basic Chicken Nuggets. They come with both a spicy and a Sweet & sour sauce!";
+	}
+}
+
+
+class UaS_VirKnightHam : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Hellknight Ham";
+		UaS_Consumable.Description "'It would be a waste too let those rot' thought one of our chefs before making this.";
+	}
+	override void Messages() {
+		AddOpenText("Oh this is literally ass.");
+	}
+}

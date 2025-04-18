@@ -1,0 +1,68 @@
+class UaS_VirAppleJuice : UaS_Consumable {
+	mixin UaS_VirJuiceDrinks;
+	default {
+		tag "Apple Juice";
+		UaS_Consumable.Description "Your standard apple juice. It even looks like pee!";
+	}
+	override void Messages() {
+		AddOpenText("An apple a day, keeps the Healer away.");
+	}
+}
+
+
+class UaS_VirLemonJuice : UaS_Consumable {
+	mixin UaS_VirJuiceDrinks;
+	default {
+		tag "Lemon Juice";
+		UaS_Consumable.Description "Sour enough to make you do funny faces and ruin your teeth!";
+	}
+	override void Messages() {
+		AddOpenText("Feel like my teeth are dissolving already.");
+	}
+}
+
+
+class UaS_VirWoodruffJuice : UaS_Consumable {
+	mixin UaS_VirJuiceDrinks;
+	default {
+		UaS_Consumable.Calories 200;
+		tag "Roxa Energy";
+		UaS_Consumable.Description "A green energy drink with a sweet woodruff aroma, packed with some extra calories!";
+	}
+	override void Messages() {
+		AddOpenText("Smells fresh!");
+	}
+}
+
+
+class UaS_VirFishCola : UaS_Consumable {
+	mixin UaS_VirJuiceDrinks;
+	default {
+		UaS_Consumable.Calories 300;
+		tag "Surströmming Juice";
+		UaS_Consumable.Description "Juice that tastes like a certain, infamous fish! Are you sure you want to gobble this down? Sure it's fairly high in energy, but...";
+	}
+	override void Messages() {
+		AddOpenText("Oh dear lord, this smell...");
+		AddOpenText("This has to be a joke...right..?");
+		AddOpenText("Are we sure the Tyrant is the bad guy here?");
+		AddConsumeText("I might actually puke..");
+		AddConsumeText("Oh...YUK");
+		AddConsumeText("Why do i have to live on the same planet as someone who is responsible for this diabolical disaster?");
+		AddConsumeText("Are we really sure the Tyrant is all that bad...?");
+		AddConsumeText("That'll be a class action lawsuit for sure.");
+		AddConsumeText("That aftertaste does not go away.");
+	}
+}
+
+
+class UaS_VirBluJuice : UaS_Consumable {
+	mixin UaS_VirJuiceDrinks;
+	default {
+		tag "Blues Juice";
+		UaS_Consumable.Description "Blueberry juice, with a bright blue colour! No magic in this one though.";
+	}
+	override void Messages() {
+		AddOpenText("Can't taste worse than blue potions.");
+	}
+}

@@ -1,0 +1,59 @@
+class UaS_VirPlombir : UaS_Consumable {
+	mixin UaS_VirDesserts;
+	default {
+		UaS_Consumable.Calories 300;
+		tag "Plombir";
+		UaS_Consumable.Description "Ice cream, slavic style. cool and refreshing, perfect for a trip to hell!";
+	}
+	override void Messages() {
+		AddOpenText("Got a vanilla one, basic but great!");
+		AddOpenText("Chocolate, can't complain!");
+	}
+}
+
+
+class UaS_VirBlackCake : UaS_Consumable {
+	mixin UaS_VirDesserts;
+	default {
+		tag "Black Forest Cake";
+		UaS_Consumable.Description "A slice of chocolate cake, with whipped cream and cherries.";
+	}
+	override void Messages() {
+		AddOpenText("The whole slice is mangled...");
+		AddConsumeText("The cherries are the best part.");
+		AddConsumeText("Always a goodie!");
+	}
+}
+
+
+class UaS_VirChoccyPudding : UaS_Consumable {
+	mixin UaS_VirDesserts;
+	default {
+		UaS_Consumable.Calories 300;
+		tag "Chocolate Pudding";
+		UaS_Consumable.Description "dark chocolate pudding. A little bitter, but should be sweet enough.";
+	}
+}
+
+
+class UaS_VirBrownies : UaS_Consumable {
+	mixin UaS_VirDesserts;
+	default {
+		tag "Brownies";
+		UaS_Consumable.Description "Two small brownie slices with walnuts nuts.";
+	}
+}
+
+
+class UaS_VirChoccyPizza : UaS_Consumable {
+	mixin UaS_VirDesserts;
+	default {
+		tag "Chocolate Pizza";
+		UaS_Consumable.Description "Two slices of Pizza...made out of chocolate.";
+	}
+	override void Messages() {
+		AddOpenText("A weird one for sure..");
+		AddConsumeText("It literally just tastes like dough with chocolate.");
+		AddConsumeText("Why not just make a chocolate cake?");
+	}
+}

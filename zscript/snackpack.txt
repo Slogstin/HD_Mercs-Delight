@@ -1,0 +1,224 @@
+class UaS_VirBagOfWalnuts : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Calories 350;
+		UaS_Consumable.Fluid -50;
+		tag "Walnuts";
+		UaS_Consumable.Description "Cracked and ready to be enjoyed. Don't forget your drink!";
+	}
+	override void Messages() {
+		AddConsumeText("Making me kinda thirsty...");
+		AddConsumeText("This one tasted weird.");
+		AddConsumeText("A gift from Mother nature.");
+		AddOpenText("Good thing i'm not allergic.");
+	}
+}
+
+
+class UaS_VirChocolateCookies : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Chocolate Chip Cookies";
+		UaS_Consumable.Description "Not fresh out the oven, but still made with love...and lots of sugar!";
+	}
+	override void Messages() {
+		AddOpenText("Just like Grandma used to make them.");
+		AddConsumeText("Would love some Milk with that!");
+		AddConsumeText("Cold, but crunchy!");
+	}
+}
+
+
+class UaS_VirCinnamonCereal : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Calories 300;
+		tag "Cereal";
+		UaS_Consumable.Description "A box of cinnamon flavored, crunchy cereal. milk not included.";
+	}
+	override void Messages() {
+		AddConsumeText("Part of a balanced breakfast, i guess.");
+		AddConsumeText("Feels criminal without milk...");
+	}
+}
+
+
+class UaS_VirDriedFuits : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Calories 300;
+		tag "Dried Fruit Mix";
+		UaS_Consumable.Description "A collection of sweet, dehydrated fruits without any added sugar!";
+	}
+	override void Messages() {
+		AddConsumeText("Nature's energy runs through my vains!");
+		AddOpenText("Sportacus would be proud.");
+		AddConsumeText("Those are actually pretty good.");
+	}
+}
+
+
+class UaS_VirSpicyPeanuts : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Fluid -50;
+		tag "Peanuts";
+		UaS_Consumable.Description "A can of roasted peanuts, covered in extra spicy seasoning!";
+	}
+	override void Messages() {
+		AddConsumeText("Hot. Hot. HOT!");
+		AddConsumeText("That'll keep me awake...");
+		AddOpenText("Finger-licking good.");
+	}
+}
+
+
+class UaS_VirMiniPretzels : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Mini Pretzels";
+		UaS_Consumable.Description "A bag of tiny, salty Pretzels.";
+	}
+	override void Messages() {
+		AddOpenText("Hope none of them broke.");
+		AddConsumeText("Got a nice crunch to it.");
+		AddConsumeText("That one barely had any salt on it.");
+	}
+}
+
+
+class UaS_VirGummyImps : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Gummy Imps";
+		UaS_Consumable.Description "Imp shaped gummies. They come in a variety of colors!";
+	}
+	override void Messages() {
+		AddOpenText("They look pretty cute.");
+		AddConsumeText("The red ones are the best.");
+		AddConsumeText("Always bite the head off first!");
+	}
+}
+
+
+class UaS_VirPotatoChips : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Potato Chips";
+		UaS_Consumable.Description "A bag of salted potato chips. No special seasoning sadly.";
+	}
+	override void Messages() {
+		AddOpenText("Half of it is just air...");
+		AddConsumeText("Sometimes salt is all you need, right?");
+		AddConsumeText("At least they're still crunchy.");
+	}
+}
+
+
+class UaS_VirNutChocolate : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Chocolate";
+		UaS_Consumable.Description "A bar of milk chocolate, with hazelnut chunks inside.";
+	}
+	override void Messages() {
+		AddOpenText("Smells good..!");
+		AddConsumeText("So crunchy!");
+		AddConsumeText("Sweet!");
+	}
+}
+
+
+class UaS_VirSunflowerSeeds : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Fluid -50;
+		tag "Sunflower Seeds";
+		UaS_Consumable.Description "Roasted and salted. You can eat them with the shell, if you really want.";
+	}
+	override void Messages() {
+		AddOpenText("Been dying for one of those!");
+	}
+}
+
+
+class UaS_VirCookieMix : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Cookie Mix";
+		UaS_Consumable.Description "A good and sweet mix of different kinds of cookies.";
+	}
+	override void Messages() {
+		AddOpenText("So, which one first?");
+	}
+}
+
+
+class UaS_VirBreadSticks : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Bread Sticks";
+		UaS_Consumable.Description "Some crunchy white bread sticks. They come with a garlic flavored dip";
+	}
+	override void Messages() {
+		AddOpenText("Basic, but not bad i guess.");
+	}
+}
+
+
+class UaS_VirNachoCheese : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Calories 300;
+		UaS_Consumable.Fluid 100;
+		tag "Nacho Cheese";
+		UaS_Consumable.Description "A bag of Nacho cheese dip. Where'd the Nachos go? Who knows!";
+	}
+	override void Messages() {
+		AddOpenText("How'd they forget the Nachos!?");
+	}
+}
+
+
+class UaS_VirRiceCake : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Calories 175;
+		UaS_Consumable.Fluid 30;
+		tag "Rice Cakes";
+		UaS_Consumable.Description "Five, plain Rice cakes. Not very rich in calories and fluid, but it'll have to do.";
+	}
+	override void Messages() {
+		AddOpenText("At least add a bit of salt...");
+	}
+}
+
+
+class UaS_VirCatTreats : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		UaS_Consumable.Calories 450;
+		UaS_Consumable.Fluid 150;
+		tag "Cat Treats";
+		UaS_Consumable.Description "A bag of crunchy treats, filled with a tuna flavoured paste. Little kitties go crazy for those!";
+	}
+	override void Messages() {
+		AddOpenText("How on earth did THIS get here!?");
+		AddOpenText("The things you do for survival...");
+		AddConsumeText("I hate that this isn't actually terrible.");
+		AddConsumeText("That aftertaste is going to stick around for a while.");
+		AddConsumeText("Nobody is going to kiss me after that.");
+	}
+}
+
+
+class UaS_VirDocBar : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Doc's Extra Chocolaty Chocolate Energy Bar";
+		UaS_Consumable.Description "A chocolate bar, named after a famous boxer. It's made to be his ideal chocolate bar.";
+	}
+	override void Messages() {
+		AddOpenText("Oh baby, watch out for my hooks and uppercuts now!");
+	}
+}
