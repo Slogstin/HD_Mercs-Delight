@@ -1,2 +1,16 @@
-# HD_Mercs-Delight
-A Ration pack for Hideous Destructor, containing anything from delicious stews, to bags of cat treats. Requires "Ugly as Sin"!
+# Description
+This Addon simply adds a still growing collection of rations to [Hideous Destructor](https://codeberg.org/mc776/HideousDestructor). 
+
+The quality of those rations ranges from amazing to Nacho cheese without the nachos, all the way down to bags of cat treats.
+
+This pack has been tested with and works alongside [Seasoningpacket](https://gitlab.com/hdiscord-saltmines/hd-seasoningpacket)
+
+REQUIRES [UGLY AS SIN](https://github.com/caligari87/Ugly-as-Sin)!
+
+
+
+
+# Credits
+Matt for [Hideous Destructor](https://codeberg.org/mc776/HideousDestructor).
+
+Caligari87 and everyone else who contributed to [Ugly as Sin](https://github.com/caligari87/Ugly-as-Sin) and the code for the rations.
