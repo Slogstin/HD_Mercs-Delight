@@ -35,7 +35,7 @@ class UaS_VirSmallfryStew : UaS_Consumable {
 	default {
 		tag "Smallfry Stew";
 		UaS_Consumable.Calories 1000;
-		UaS_Consumable.Fluid 500;
+		UaS_Consumable.Fluid 570;
 		UaS_Consumable.Description "Salmon stew, with potatoes and veggies. Comes with a free spoon!";
 	}
 }
@@ -46,7 +46,7 @@ class UaS_VirOnionSoup : UaS_Consumable {
 	default {
 		tag "French Onion Soup";
 		UaS_Consumable.Calories 700;
-		UaS_Consumable.Fluid 600;
+		UaS_Consumable.Fluid 650;
 		UaS_Consumable.Description "Onions and a mix of different kinds of cheese in a lovely beef broth!";
 	}
 }
@@ -56,8 +56,19 @@ class UaS_VirGoulash : UaS_Consumable {
 	mixin UaS_VirBigMeals;
 	default {
 		tag "Goulash & Noodles";
-		UaS_Consumable.Calories 800;
-		UaS_Consumable.Fluid 500;
+		UaS_Consumable.Calories 780;
+		UaS_Consumable.Fluid 510;
 		UaS_Consumable.Description "Noodles & Goulash in a hearty sauce.";
+	}
+}
+
+
+class UaS_VirGarbageStew : UaS_Consumable {
+	mixin UaS_VirBigMeals;
+	default {
+		tag "Garbage Stew";
+		UaS_Consumable.Calories 720;
+		UaS_Consumable.Fluid 560;
+		UaS_Consumable.Description "A stew made out of ingredients of questionable quality and origin. You never know what's inside.";
 	}
 }

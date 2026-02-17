@@ -81,6 +81,18 @@ class UaS_VirCannedBurger : UaS_Consumable {
 }
 
 
+class UaS_VirCannedHotDog : UaS_Consumable {
+	mixin UaS_VirSmallmeals;
+	default {
+		tag "Canned Hot Dog";
+		UaS_Consumable.Description "From the creators of the canned Cheeseburger. Ketchup and Mustard included in the can.";
+	}
+	override void Messages() {
+		AddOpenText("It's all squished..");
+	}
+}
+
+
 class UaS_VirCurryWurst : UaS_Consumable {
 	mixin UaS_VirSmallmeals;
 	default {
@@ -109,7 +121,7 @@ class UaS_VirSpinach : UaS_Consumable {
 class UaS_VirPineapple : UaS_Consumable {
 	mixin UaS_VirSmallmeals;
 	default {
-		UaS_Consumable.Fluid 400;
+		UaS_Consumable.Fluid 500;
 		tag "Pineapple";
 		UaS_Consumable.Description "A can of cut pinapple. It has a lot of liquid inside!";
 	}

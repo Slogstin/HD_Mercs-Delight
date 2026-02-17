@@ -9,6 +9,30 @@ class UaS_VirBigSwig : UaS_Consumable {
 	}
 }
 
+class UaS_VirPickleJuice : UaS_Consumable {
+	mixin UaS_VirBigDrinks;
+	default {
+		tag "Pickle Juice";
+		UaS_Consumable.Calories 380;
+		UaS_Consumable.Fluid 1250;
+		UaS_Consumable.Description "Don't worry, it's not real pickle juice. It's just juice that tastes like pickles.";
+	}
+	override void Messages() {
+	}
+}
+
+class UaS_VirChocolateSoda : UaS_Consumable {
+	mixin UaS_VirBigDrinks;
+	default {
+		tag "Chocolate Soda";
+				UaS_Consumable.Calories 320;
+		UaS_Consumable.Fluid 1200;
+		UaS_Consumable.Description "Some say it's actually not that bad. The question is: Do you want to find out?";
+	}
+	override void Messages() {
+	}
+}
+
 class UaS_VirBigWater : UaS_Consumable {
 	mixin UaS_VirBigDrinks;
 	default {

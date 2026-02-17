@@ -36,6 +36,16 @@ class UaS_VirChoccyPudding : UaS_Consumable {
 }
 
 
+class UaS_VirVanillaPudding : UaS_Consumable {
+	mixin UaS_VirDesserts;
+	default {
+		UaS_Consumable.Calories 300;
+		tag "Vanilla Pudding";
+		UaS_Consumable.Description "Basic vanilla pudding with a hint of cinnamon.";
+	}
+}
+
+
 class UaS_VirBrownies : UaS_Consumable {
 	mixin UaS_VirDesserts;
 	default {
@@ -55,5 +65,20 @@ class UaS_VirChoccyPizza : UaS_Consumable {
 		AddOpenText("A weird one for sure..");
 		AddConsumeText("It literally just tastes like dough with chocolate.");
 		AddConsumeText("Why not just make a chocolate cake?");
+	}
+}
+
+
+class UaS_VirCheeseSalad : UaS_Consumable {
+	mixin UaS_VirDesserts;
+	default {
+		tag "Party Cheese Salad";
+		UaS_Consumable.Description "Lime jelly, crushed pineapples, green peppers, nuts, celery and cheese. Make of that what you will.";
+	}
+	override void Messages() {
+		AddOpenText("Good god it looks like vomit.");
+		AddConsumeText("No. Just no.");
+		AddConsumeText("What brilliant mind is responsible for this?");
+		AddConsumeText("This is the best argument for laws on cooking.");
 	}
 }

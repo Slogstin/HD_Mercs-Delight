@@ -14,10 +14,22 @@ class UaS_VirLemonJuice : UaS_Consumable {
 	mixin UaS_VirJuiceDrinks;
 	default {
 		tag "Lemon Juice";
-		UaS_Consumable.Description "Sour enough to make you do funny faces and ruin your teeth!";
+		UaS_Consumable.Description "Not to be confused with Melon Juice. Sour enough to make you do funny faces and rot your teeth within minutes!";
 	}
 	override void Messages() {
 		AddOpenText("Feel like my teeth are dissolving already.");
+	}
+}
+
+
+class UaS_VirMelonJuice : UaS_Consumable {
+	mixin UaS_VirJuiceDrinks;
+	default {
+		tag "Melon Juice";
+		UaS_Consumable.Calories 90;
+		UaS_Consumable.Description "Not to be confused with Lemon Juice. Best enjoyed cold!";
+	}
+	override void Messages() {
 	}
 }
 
@@ -38,9 +50,10 @@ class UaS_VirWoodruffJuice : UaS_Consumable {
 class UaS_VirFishCola : UaS_Consumable {
 	mixin UaS_VirJuiceDrinks;
 	default {
-		UaS_Consumable.Calories 300;
+		UaS_Consumable.Calories 350;
 		tag "Surströmming Juice";
 		UaS_Consumable.Description "Juice that tastes like a certain, infamous fish! Are you sure you want to gobble this down? Sure it's fairly high in energy, but...";
+		Inventory.PickupMessage "Picked up a pouch with...juice?";
 	}
 	override void Messages() {
 		AddOpenText("Oh dear lord, this smell...");
@@ -60,9 +73,24 @@ class UaS_VirBluJuice : UaS_Consumable {
 	mixin UaS_VirJuiceDrinks;
 	default {
 		tag "Blues Juice";
+		UaS_Consumable.Calories 110;
 		UaS_Consumable.Description "Blueberry juice, with a bright blue colour! No magic in this one though.";
 	}
 	override void Messages() {
 		AddOpenText("Can't taste worse than blue potions.");
+	}
+}
+
+
+class UaS_VirPepperSoda : UaS_Consumable {
+	mixin UaS_VirJuiceDrinks;
+	default {
+		tag "Sodaroni";
+		UaS_Consumable.Description "Soda with a distinct pepperoni flavour. Make a slushy out of it and add shredded jerky for an unforgettable experience!";
+	}
+	override void Messages() {
+		AddOpenText("...It's terrible");
+		AddOpenText("...or is it?");
+		AddOpenText("...not too bad.");
 	}
 }
