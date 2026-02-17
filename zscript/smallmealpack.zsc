@@ -146,6 +146,7 @@ class UaS_VirKnightHam : UaS_Consumable {
 	override void Messages() {
 		AddOpenText("Oh this is literally ass.");
 	}
+
 }
 
 
@@ -156,7 +157,7 @@ class UaS_VirFriedMice : UaS_Consumable {
 		UaS_Consumable.Description "You know these jokes about rats jumping into the fryer? Yeah...turns out it ain't just jokes, so might as well make the best of it!";
 	}
 	override void Messages() {
-	}
 	AddConsumeText("They're not even crunchy anymore...");
 	AddConsumeText("Just.....soft mush...and bones...");
+	}
 }
