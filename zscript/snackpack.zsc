@@ -221,12 +221,13 @@ class UaS_VirDocBar : UaS_Consumable {
 	override void Messages() {
 		AddOpenText("Oh baby, watch out for my hooks and uppercuts now!");
 	}
+
 }
 
 
-// Would love to use this, but it just feels a bit out of place.	--- Slogstin
+// Would love to use this in the main branch, but it just feels a bit out of place.	--- Slogstin
 
-/*class UaS_VirEvilCheese : UaS_Consumable {
+class UaS_VirEvilCheese : UaS_Consumable {
 	mixin UaS_VirSnacks;
 	default {
 		tag "Archie's Evil Cheese";
@@ -245,4 +246,4 @@ class UaS_VirDocBar : UaS_Consumable {
 		CHSE B -1;
 		stop;
 	}
-}*/
+}
