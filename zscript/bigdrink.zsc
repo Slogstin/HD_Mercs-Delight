@@ -1,0 +1,41 @@
+class UaS_VirBigSwig : UaS_Consumable {
+	mixin UaS_VirBigDrinks;
+	default {
+		tag "Roxa Energy XL";
+		UaS_Consumable.Calories 530;
+		UaS_Consumable.Description "The amount of caffeine in this bottle might be enough to kill you.";
+	}
+	override void Messages() {
+	}
+}
+
+class UaS_VirBigWater : UaS_Consumable {
+	mixin UaS_VirBigDrinks;
+	default {
+		tag "The Big Swig";
+		UaS_Consumable.Calories 0;
+		UaS_Consumable.Fluid 2000;
+		UaS_Consumable.Bulk 30;
+		UaS_Consumable.Description "The average person should drink around 2 liters every day, so here you go. Hydrate, now!";
+		Inventory.PickupMessage "Picked up a large, resealable water pouch.";
+		scale 1.15; 
+	}
+	override void Messages() {
+		AddConsumeText("It has the same plastic aroma as the smaller ones.");
+		AddConsumeText("A little sweet for some reason.");
+	}
+}
+
+class UaS_VirTomatoJuice : UaS_Consumable {
+	mixin UaS_VirBigDrinks;
+	default {
+		tag "Tomato Juice";
+		UaS_Consumable.Description "This is for all 4 tomato juice lovers out there! We don't know where they are, but we're sure they're crying from sheer happiness over their 1.5l pouch of tomato juice.";
+		Inventory.PickupMessage "Picked up a large, resealable pouch of...Tomato juice?";
+	}
+	override void Messages() {
+		AddOpenText("Can't get over the fact this exists.");
+		AddConsumeText("It's fine.");
+		AddConsumeText("Tastes like tomatoes alright.");
+	}
+}

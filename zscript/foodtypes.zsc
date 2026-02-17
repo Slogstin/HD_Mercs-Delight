@@ -64,7 +64,7 @@ mixin class UaS_VirMilkDrinks {
 		UaS_Consumable.Bulk 8;
 		+UaS_Consumable.PACKAGED;
 		+UaS_Consumable.DRINKABLE;
-		Inventory.PickupMessage "Picked up a water pouch, also containing a pack of milk powder.";
+		Inventory.PickupMessage "Picked up a water pouch, with some milk powder.";
 		Inventory.Icon "HSCVR0";
 		scale 0.45;
 	}
@@ -75,12 +75,12 @@ mixin class UaS_VirMilkDrinks {
 
 mixin class UaS_VirJuiceDrinks {
 	default {
-		UaS_Consumable.Calories 100;
-		UaS_Consumable.Fluid 250;
+		UaS_Consumable.Calories 150;
+		UaS_Consumable.Fluid 350;
 		UaS_Consumable.Bulk 8;
 		+UaS_Consumable.PACKAGED;
 		+UaS_Consumable.DRINKABLE;
-		Inventory.PickupMessage "Picked up a water pouch, also containing a pack of juice mix.";
+		Inventory.PickupMessage "Picked up a water pouch, with a powdered drink.";
 		Inventory.Icon "HSCVR0";
 		scale 0.45;
 	}
@@ -92,12 +92,28 @@ mixin class UaS_VirJuiceDrinks {
 mixin class UaS_VirTeaDrinks {
 	default {
 		UaS_Consumable.Calories 100;
-		UaS_Consumable.Fluid 200;
+		UaS_Consumable.Fluid 250;
 		UaS_Consumable.Bulk 8;
 		+UaS_Consumable.PACKAGED;
 		+UaS_Consumable.DRINKABLE;
-		Inventory.PickupMessage "Picked up a water pouch, also containing a teabag and some sugar.";
+		Inventory.PickupMessage "Picked up a water pouch, with a teabag and some sugar.";
 		Inventory.Icon "HSCVR0";
 		scale 0.45;
+	}
+}
+
+
+// Big Drinks
+
+mixin class UaS_VirBigDrinks {
+	default {
+		UaS_Consumable.Calories 300;
+		UaS_Consumable.Fluid 1500;
+		UaS_Consumable.Bulk 20;
+		+UaS_Consumable.PACKAGED;
+		+UaS_Consumable.DRINKABLE;
+		+UaS_Consumable.RESEALABLE;
+		Inventory.PickupMessage "Picked up a large, resealable water pouch, with a powdered drink.";
+		Inventory.Icon "HSCVR0";
 	}
 }

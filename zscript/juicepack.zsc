@@ -27,7 +27,7 @@ class UaS_VirWoodruffJuice : UaS_Consumable {
 	default {
 		UaS_Consumable.Calories 200;
 		tag "Roxa Energy";
-		UaS_Consumable.Description "A green energy drink with a sweet woodruff aroma, packed with some extra calories!";
+		UaS_Consumable.Description "A green energy drink with a sweet woodruff aroma, a cute, green bird mascot and packed with some extra calories!";
 	}
 	override void Messages() {
 		AddOpenText("Smells fresh!");

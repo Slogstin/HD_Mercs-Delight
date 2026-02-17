@@ -57,7 +57,7 @@ class UaS_VirGoulash : UaS_Consumable {
 	default {
 		tag "Goulash & Noodles";
 		UaS_Consumable.Calories 800;
-		UaS_Consumable.Fluid 450;
+		UaS_Consumable.Fluid 500;
 		UaS_Consumable.Description "Noodles & Goulash in a hearty sauce.";
 	}
 }

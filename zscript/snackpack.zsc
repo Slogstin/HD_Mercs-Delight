@@ -222,3 +222,27 @@ class UaS_VirDocBar : UaS_Consumable {
 		AddOpenText("Oh baby, watch out for my hooks and uppercuts now!");
 	}
 }
+
+
+// Would love to use this, but it just feels a bit out of place.	--- Slogstin
+
+/*class UaS_VirEvilCheese : UaS_Consumable {
+	mixin UaS_VirSnacks;
+	default {
+		tag "Archie's Evil Cheese";
+		UaS_Consumable.Calories 1000;
+		UaS_Consumable.Fluid 2000;
+		UaS_Consumable.Bulk 3;
+		Inventory.PickupMessage "Picked up a piece of cheese. It makes a chill run down your spine...";
+		Inventory.Icon "CHSEB0";
+		UaS_Consumable.Description "This isn't normal cheese. This piece is awarded to those who have successfully ventured into and beaten Archie's Magnificent & Mysterious Maze. Just a few, very dense bites. Use it wisely.";
+	}
+	override void Messages() {
+		AddOpenText("Is this a good idea?");
+	}
+	states(actor){
+	spawn:
+		CHSE B -1;
+		stop;
+	}
+}*/
