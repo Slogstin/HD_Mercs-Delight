@@ -3,7 +3,7 @@ This Addon simply adds a still growing collection of rations to [Hideous Destruc
 
 The quality of those rations ranges from amazing to Nacho cheese without the nachos, all the way down to bags of cat treats.
 
-This pack has been tested with and works alongside [Seasoningpacket](https://gitlab.com/hdiscord-saltmines/hd-seasoningpacket)
+This pack should work fine alongside other ration packs.
 
 REQUIRES [UGLY AS SIN](https://github.com/caligari87/Ugly-as-Sin)!
 
